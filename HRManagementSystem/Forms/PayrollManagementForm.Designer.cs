@@ -51,17 +51,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(345, 22);
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label1.Location = new Point(313, 20);
             label1.Name = "label1";
-            label1.Size = new Size(154, 20);
+            label1.Size = new Size(251, 32);
             label1.TabIndex = 0;
             label1.Text = "Payroll Management";
             // 
             // lblEmployee
             // 
             lblEmployee.AutoSize = true;
-            lblEmployee.Location = new Point(53, 140);
+            lblEmployee.Location = new Point(44, 82);
             lblEmployee.Name = "lblEmployee";
             lblEmployee.Size = new Size(78, 20);
             lblEmployee.TabIndex = 1;
@@ -70,7 +70,7 @@
             // lblYear
             // 
             lblYear.AutoSize = true;
-            lblYear.Location = new Point(53, 181);
+            lblYear.Location = new Point(44, 130);
             lblYear.Name = "lblYear";
             lblYear.Size = new Size(40, 20);
             lblYear.TabIndex = 2;
@@ -79,7 +79,7 @@
             // lblMonth
             // 
             lblMonth.AutoSize = true;
-            lblMonth.Location = new Point(53, 215);
+            lblMonth.Location = new Point(44, 175);
             lblMonth.Name = "lblMonth";
             lblMonth.Size = new Size(55, 20);
             lblMonth.TabIndex = 3;
@@ -88,7 +88,7 @@
             // lblOvertime
             // 
             lblOvertime.AutoSize = true;
-            lblOvertime.Location = new Point(53, 252);
+            lblOvertime.Location = new Point(44, 220);
             lblOvertime.Name = "lblOvertime";
             lblOvertime.Size = new Size(99, 20);
             lblOvertime.TabIndex = 4;
@@ -97,7 +97,7 @@
             // lblOtherDeductions
             // 
             lblOtherDeductions.AutoSize = true;
-            lblOtherDeductions.Location = new Point(53, 309);
+            lblOtherDeductions.Location = new Point(44, 314);
             lblOtherDeductions.Name = "lblOtherDeductions";
             lblOtherDeductions.Size = new Size(128, 20);
             lblOtherDeductions.TabIndex = 5;
@@ -106,44 +106,45 @@
             // cmbEmployee
             // 
             cmbEmployee.FormattingEnabled = true;
-            cmbEmployee.Location = new Point(233, 132);
+            cmbEmployee.Location = new Point(188, 79);
             cmbEmployee.Name = "cmbEmployee";
-            cmbEmployee.Size = new Size(151, 28);
+            cmbEmployee.Size = new Size(238, 28);
             cmbEmployee.TabIndex = 6;
             // 
             // nudYear
             // 
-            nudYear.Location = new Point(166, 174);
+            nudYear.Location = new Point(188, 128);
             nudYear.Maximum = new decimal(new int[] { 2100, 0, 0, 0 });
             nudYear.Minimum = new decimal(new int[] { 2020, 0, 0, 0 });
             nudYear.Name = "nudYear";
-            nudYear.Size = new Size(150, 27);
+            nudYear.Size = new Size(238, 27);
             nudYear.TabIndex = 7;
             nudYear.Value = new decimal(new int[] { 2026, 0, 0, 0 });
             // 
             // cmbMonth
             // 
             cmbMonth.FormattingEnabled = true;
-            cmbMonth.Location = new Point(153, 212);
+            cmbMonth.Location = new Point(188, 172);
             cmbMonth.Name = "cmbMonth";
-            cmbMonth.Size = new Size(151, 28);
+            cmbMonth.Size = new Size(238, 28);
             cmbMonth.TabIndex = 8;
             // 
             // txtOvertime
             // 
-            txtOvertime.Location = new Point(166, 249);
+            txtOvertime.Location = new Point(188, 217);
             txtOvertime.Name = "txtOvertime";
-            txtOvertime.Size = new Size(125, 27);
+            txtOvertime.Size = new Size(238, 27);
             txtOvertime.TabIndex = 9;
             // 
             // btnGenerate
             // 
-            btnGenerate.Location = new Point(167, 332);
+            btnGenerate.BackColor = Color.DarkTurquoise;
+            btnGenerate.Location = new Point(82, 371);
             btnGenerate.Name = "btnGenerate";
-            btnGenerate.Size = new Size(149, 29);
+            btnGenerate.Size = new Size(150, 29);
             btnGenerate.TabIndex = 10;
             btnGenerate.Text = "Generate Payroll";
-            btnGenerate.UseVisualStyleBackColor = true;
+            btnGenerate.UseVisualStyleBackColor = false;
             btnGenerate.Click += btnGenerate_Click;
             // 
             // dgvPayrolls
@@ -152,36 +153,37 @@
             dgvPayrolls.AllowUserToDeleteRows = false;
             dgvPayrolls.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvPayrolls.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvPayrolls.Location = new Point(53, 357);
+            dgvPayrolls.Location = new Point(46, 429);
             dgvPayrolls.MultiSelect = false;
             dgvPayrolls.Name = "dgvPayrolls";
             dgvPayrolls.ReadOnly = true;
             dgvPayrolls.RowHeadersWidth = 51;
             dgvPayrolls.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvPayrolls.Size = new Size(697, 188);
+            dgvPayrolls.Size = new Size(828, 193);
             dgvPayrolls.TabIndex = 11;
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(400, 332);
+            btnDelete.BackColor = Color.DarkTurquoise;
+            btnDelete.Location = new Point(370, 371);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(150, 29);
             btnDelete.TabIndex = 12;
             btnDelete.Text = "Delete Payroll";
-            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.UseVisualStyleBackColor = false;
             btnDelete.Click += btnDelete_Click;
             // 
             // txtDeductions
             // 
-            txtDeductions.Location = new Point(205, 306);
+            txtDeductions.Location = new Point(188, 310);
             txtDeductions.Name = "txtDeductions";
-            txtDeductions.Size = new Size(125, 27);
+            txtDeductions.Size = new Size(238, 27);
             txtDeductions.TabIndex = 13;
             // 
             // lblAllowances
             // 
             lblAllowances.AutoSize = true;
-            lblAllowances.Location = new Point(53, 282);
+            lblAllowances.Location = new Point(44, 266);
             lblAllowances.Name = "lblAllowances";
             lblAllowances.Size = new Size(87, 20);
             lblAllowances.TabIndex = 14;
@@ -189,16 +191,17 @@
             // 
             // txtAllowances
             // 
-            txtAllowances.Location = new Point(167, 282);
+            txtAllowances.Location = new Point(188, 262);
             txtAllowances.Name = "txtAllowances";
-            txtAllowances.Size = new Size(125, 27);
+            txtAllowances.Size = new Size(238, 27);
             txtAllowances.TabIndex = 15;
             // 
             // PayrollManagementForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 553);
+            BackColor = Color.SteelBlue;
+            ClientSize = new Size(922, 653);
             Controls.Add(txtAllowances);
             Controls.Add(lblAllowances);
             Controls.Add(txtDeductions);

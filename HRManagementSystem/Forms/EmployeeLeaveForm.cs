@@ -558,10 +558,6 @@ namespace HRManagementSystem.Forms
 
 
 
-
-
-
-
         //private void EmployeeLeaveForm_Load(object? sender, EventArgs e)
         //{
         //    try

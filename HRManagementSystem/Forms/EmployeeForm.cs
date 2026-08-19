@@ -709,6 +709,7 @@ namespace HRManagementSystem.Forms
                 txtPassword.Clear();
             }
         }
+
     }
 
 }
